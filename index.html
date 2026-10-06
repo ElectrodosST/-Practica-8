@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The New York Times - Portada</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      color: #121212;
+      background-color: #fff;
+      padding: 0 20px 50px 20px;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      border-bottom: 1px solid #e2e2e2;
+    }
+
+    .top-bar .editions a {
+      margin-right: 10px;
+      text-decoration: none;
+      color: #666;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .top-bar .actions {
+      display: flex;
+      gap: 10px;
+    }
+
+    .btn-subscribe, .btn-login {
+      background-color: #567b95;
+      color: white;
+      padding: 6px 12px;
+      font-size: 11px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      text-transform: uppercase;
+    }
+
+    header {
+      padding: 15px 0 5px 0;
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+    }
+
+    .header-meta {
+      display: flex;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: #666;
+    }
+
+    .header-meta.left {
+      justify-content: flex-start;
+    }
+
+    .header-meta.right {
+      justify-content: flex-end;
+    }
+
+    .masthead-title {
+      font-family: 'UnifrakturMaguntia', serif;
+      font-size: 64px;
+      font-weight: normal;
+      letter-spacing: -1px;
+      line-height: 1;
+      text-align: center;
+    }
+
+    .nav-sections {
+      border-top: 1px solid #121212;
+      border-bottom: 4px double #121212;
+      padding: 6px 0;
+      margin-bottom: 20px;
+    }
+
+    .nav-sections ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      gap: 18px;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-weight: bold;
+    }
+
+    .nav-sections a {
+      text-decoration: none;
+      color: #121212;
+    }
+
+    .promo-banner {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      padding: 8px 0;
+      border-bottom: 1px solid #e2e2e2;
+      margin-bottom: 20px;
+    }
+
+    .main-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 30px;
+    }
+
+    .left-column {
+      border-right: 1px solid #e2e2e2;
+      padding-right: 30px;
+    }
+
+    .featured-box {
+      border: 1px solid #ccc;
+      padding: 15px;
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      gap: 15px;
+      align-items: start;
+    }
+
+    article h2 {
+      font-family: 'Georgia', serif;
+      font-size: 20px;
+      line-height: 1.2;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    article p {
+      font-family: 'Georgia', serif;
+      font-size: 13px;
+      line-height: 1.4;
+      color: #555;
+    }
+
+    .comments-count {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      color: #666;
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .image-container {
+      width: 100%;
+      background-color: #f0f0f0;
+      margin-bottom: 6px;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+
+    .caption {
+      font-family: Arial, sans-serif;
+      font-size: 10px;
+      color: #727272;
+      text-align: right;
+      margin-top: 4px;
+    }
+
+    .right-column article {
+      margin-bottom: 25px;
+    }
+
+    .grid-2-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="editions">
+      <a href="#">EE.UU.</a>
+      <a href="#">Internacional</a>
+      <a href="#">Canadá</a>
+      <a href="#">Español</a>
+      <a href="#">中文</a>
+    </div>
+    <div class="actions">
+      <button class="btn-subscribe">Suscríbete por $0.25/semana</button>
+      <button class="btn-login">Iniciar sesión</button>
+    </div>
+  </div>
+
+  <header>
+    <div class="header-meta left">
+      <div>
+        <strong>Lunes, 5 de octubre de 2026</strong><br>
+        <span>Edición de hoy</span>
+      </div>
+    </div>
+    <h1 class="masthead-title">The New York Times</h1>
+    <div class="header-meta right">
+      <div>
+        <span>Dow <strong>+0.49% ↑</strong></span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav-sections">
+    <ul>
+      <li><a href="#">EE.UU. ▾</a></li>
+      <li><a href="#">Mundo ▾</a></li>
+      <li><a href="#">Negocios ▾</a></li>
+      <li><a href="#">Artes ▾</a></li>
+      <li><a href="#">Estilo de vida ▾</a></li>
+      <li><a href="#">Opinión ▾</a></li>
+      <li><a href="#">Video ▾</a></li>
+      <li><a href="#">Programas ▾</a></li>
+      <li><a href="#">Juegos ▾</a></li>
+      <li><a href="#">Cocina ▾</a></li>
+      <li><a href="#">Wirecutter ▾</a></li>
+      <li><a href="#">Deportes ▾</a></li>
+    </ul>
+  </nav>
+
+  <div class="promo-banner">
+    Estas noticias principales son de <strong>acceso gratuito</strong>.
+  </div>
+
+  <main class="main-grid">
+
+    <section class="left-column">
+      <div class="featured-box">
+        
+        <article>
+          <h2>Cómo las elecciones intermedias podrían complicar el nuevo período de la Corte Suprema</h2>
+          <p>Incluso antes de que los jueces comiencen su nuevo período hoy, el tribunal ha pasado el verano resolviendo rápidas solicitudes sobre disputas electorales.</p>
+          <div class="comments-count">💬 183</div>
+        </article>
+
+        <div class="media-container">
+          <div class="image-container">
+            <img src="imagen1.jpg" alt="Video o imagen de la Corte Suprema">
+          </div>
+          <div class="caption">Ann E. Marimow, Alexandra Ostasiewicz, Nicolay Nikolov, Nour Idriss, Stephanie Swart, Pierre Kattar y Joy Sung</div>
+        </div>
+
+        <article>
+          <h2>Los jueces escucharán una demanda ambiental de gran importancia</h2>
+          <p>La Corte Suprema comenzará su período con un caso emblemático sobre si los gobiernos locales pueden demandar a las empresas petroleras por los daños causados por el cambio climático.</p>
+          <div class="comments-count">💬 83</div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="right-column">
+      
+      <article>
+        <div class="image-container">
+          <img src="imagen2.jpg" alt="Ñoquis con coles de Bruselas">
+        </div>
+        <div class="caption">Andrew Purcell para The New York Times</div>
+        <h2>Esta receta de ñoquis con coles de Bruselas tiene más de 27,000 valoraciones.</h2>
+        <p>«¿Quieres mejorar un día entre semana? Cocina esto. ¿Quieres niños felices? Cocina esto. ¿Quieres deslumbrar a tus invitados? Cocina esto», escribió un lector.</p>
+        <span style="font-family: Arial; font-size: 11px; color: #666;">20 MIN</span>
+      </article>
+
+      <div class="grid-2-col">
+        <article>
+          <div class="image-container">
+            <img src="imagen3.jpg" alt="Persona con accesorio">
+          </div>
+        </article>
+        <article>
+          <div class="image-container">
+            <img src="imagen4.jpg" alt="Caminando con tacones">
+          </div>
+        </article>
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
