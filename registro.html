@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formularios en HTML</title>
+<style>
+	body{
+		background-color: #f3f4f6;
+		font-family: Arial,sans-serif;
+		display:flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+		margin: 0;
+	}
+	.recuadro{
+		background-color: #ffffff;
+		width: 100%;
+		max-width: 380px;
+		padding:30px;
+		border-radius: 12px;
+		border:1px solid #e5e7eb;
+		box-shadow: 0 10px 25px rgba (0, 0, 0, 0.1);
+	}
+	h1{
+		margin-top: 0;
+		margin-bottom: 20px;
+		text-align: center;
+		color: #1f2937;
+	}
+	.campo{
+		margin-bottom: 15px;
+		display: flex;
+		flex-direction: column;
+	}
+	label{
+		font-size: 14px;
+		color: #4b5563;
+		margin-bottom: 5px;
+		font-weight: bold;
+	}
+	input{
+		padding: 10px;
+		border: 1px solid #d1d5db;
+		border-radius: 6px;
+		font-size: 14px;
+		outline: none;
+	}
+	input:focus{
+		border-color: #2563eb;
+    	box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.2);
+	}
+	botton{
+		display: flex;
+		gap:10px;
+		margin-top: 20px;
+	}
+	button{
+		flex: 1;
+		padding: 10px;
+		border: none;
+		border-radius: 6px;
+		font-size: 14px;
+		font-weight: bold;
+		cursor: pinter;
+		color: width;
+	}
+	botton[type="submit"]{
+		background-color: #2563eb;
+  	}
+  	button[type="reset"] {
+    	background-color: #ef4444;
+	}
+	.btn-inicio {
+      display: inline-block;
+      margin-bottom: 15px;
+      color: #2563eb;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    
+    .btn-inicio:hover {
+      text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+	<div class="recuadro">
+		<a href="index.html" class="btn-inicio"><i class="fa-solid fa-arrow-left"></i> Regresar al inicio</a>
+    	<h2>Registro</h2>
+    	<form action="" method="post">
+	<div class="campo">
+        <label>Ingresa tu nombre:</label>
+        <input type="text" name="nombre">
+      </div>
+      <div class="campo">
+        <label>Nombre De usuario:</label>
+        <input type="text" name="nombre de usuario">
+      </div>
+      <div class="campo">
+        <label>NUmero de Telefono:</label>
+        <input type="text" name="telefono">
+      </div>
+
+      <div class="campo">
+        <label>Ingresa tu correo:</label>
+        <input type="email" name="correo">
+      </div>
+
+      <div class="campo">
+        <label>Ingresa tu contraseña:</label>
+        <input type="password" name="contraseña">
+      </div>
+
+      <div class="campo">
+        <label>Confirma tu contraseña:</label>
+        <input type="password" name="confirmar_contraseña">
+      </div>
+      <a href="formulario.html" class="btn-inicio"><i class="fa-solid fa-arrow-left"></i> Iniciar Secion</a>
+      <div class="botones">
+        <button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i></button>
+        <button type="reset">Borrar <i class="fa fa-trash"></i></button>
+      </div>
+    </form>
+  </div>
+
